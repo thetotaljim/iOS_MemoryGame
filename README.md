@@ -34,28 +34,20 @@ If the selection is incorrect, the cards flip back over and you have to keep try
 ## Contents 
 
 Here is a list of the included files and their usage in this project (located in the main HMan folder):
-* Models
-  * ``` InitialModel.swift ```
-    * Used to determine the the user's selected difficulty 
-  * ``` GameModel.swift ```
-    * Here the game is played. Functions for selecting words and tracking the progress of each turn are included in this file.
-  * ``` FinalModel.swift ```
-    * This file displays the results of the game.
-  * ``` MyPropertyList.plist ```
-    * Contains the words to be guessed.
-* Views  
-  * ``` HangmanView.swift ```
-    * This file uses iOS Core Graphics to draw the hangman.
-  * ``` TitleView.swift ```
-    * Displays the home page of the application.
-* Controllers
-  * ``` InitialViewController.swift ```
-    * Handles user input of difficult level.
-  * ``` GameViewController.swift ```
-    * Controls letter selection and seques to initial and final views.
-  * ``` FinalViewController.swift ```
-    * This View handles how the results are displayed.
- 
+  
+* ``` MemoryCard.swift ```
+  * Data structure to hold card data.
+* ``` GameModel.swift ```
+  * Sets the data for the game, including info about the cards used and number of matches necissary for a victory.
+* ``` GameViewController.swift ```
+  * Main controller for the game.  Handles user selections and tests for matches and victory.
+* ``` MainModel.swift ```
+  * Data structure for game board sizes.  
+* ``` MainViewController.swift ```
+  * Controlls storing the size of board selected.
+* ``` MemoryCollectionViewCell.swift ```
+  * Data structure for the cells the cards are placed into in the GameViewController.
+
 ## Meta
 
 Jim Steimel [@jimsteimel](https://twitter.com/jimsteimel) - jim@thetotaljim.com - www.thetotaljim.com
